@@ -1,0 +1,95 @@
+<TrigBoxLayout>:
+    orientation:"vertical"
+    spacing:10
+    padding:10
+
+
+    BoxLayout:
+        spacing: 10
+	    Label:
+	        text:"Northing1"
+	        size_hint:.2, .3
+	    TextInput: 
+	        id: N1
+	        font_size: 15
+	        size_hint: .2, .3
+	        multiline: False
+	    Label:
+	        text:"Easting1"
+	        size_hint:.2, .3
+
+	    TextInput: 
+	        id: E1
+	        font_size: 15
+	        size_hint: .2, .3
+	        multiline: False
+	BoxLayout:
+        spacing: 10
+	    Label:
+	        text:"Northing2"
+	        size_hint:.2, .3
+	    TextInput: 
+	        id: N2
+	        font_size: 15
+	        size_hint: .2, .3
+	        multiline: False
+	    Label:
+	        text:"Easting2"
+	        size_hint:.2, .3
+
+	    TextInput: 
+	        id: E2
+	        font_size: 15
+	        size_hint: .2, .3
+	        multiline: False
+
+	BoxLayout:
+        spacing: 10
+	    Label:
+	        text:"Angle1"
+	        size_hint:.2, .3
+	    TextInput: 
+	        id: A1
+	        font_size: 15
+	        size_hint: .2, .3
+	        multiline: False
+	BoxLayout:
+	    Label:
+	        text:"Angle2"
+	        size_hint:.2, .3
+
+	    TextInput: 
+	        id: A2
+	        font_size: 15
+	        size_hint: .2, .3
+	        multiline: False
+
+	BoxLayout:
+	    Label:
+	        text:"Northing"
+	        size_hint:.2, .3
+
+	    TextInput: 
+	        id: N
+	        font_size: 15
+	        size_hint: .2, .3
+	        multiline: False
+	    Button:
+	        text: "OK"
+	        size_hint: .2, .3
+	        on_press: root.computeNorthing()
+	BoxLayout:
+	    Label:
+	        text:"Easting"
+	        size_hint:.2, .3
+
+	    TextInput: 
+	        id: E
+	        font_size: 15
+	        size_hint: .2, .3
+	        multiline: False
+	    Button:
+	        text: "OK"
+	        size_hint: .2, .3
+	        on_press: root.computeEasting()
+
